@@ -435,4 +435,11 @@ $(function () {
 
   (window.ees = window.ees || {}).map = new Map(window.gmaps, '#map');
 });
+'use strict';
+
+$(document).ready(function () {
+	$('.topbar__nav-toggle').click(function () {
+		$('.topbar__nav-control').toggleClass('topbar__nav-control--active');
+	});
+});
 "use strict";

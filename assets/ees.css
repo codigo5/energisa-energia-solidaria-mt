@@ -1590,6 +1590,8 @@ blockquote p {
   border-bottom: 1px solid #007297; }
   .topbar .topbar__nav {
     text-align: center; }
+  .topbar .topbar__nav-toggle {
+    display: none; }
   .topbar .topbar__link {
     display: inline-block;
     padding: 6px 15px;
@@ -1607,10 +1609,89 @@ blockquote p {
       box-shadow: inset 0 2px 1px 0 rgba(255, 255, 255, 0.35); }
 
 /* MENU BURGER */
-@media screen and (min-width: 600px) {
-  .topbar .topbar__nav {
-    text-align: center;
+@media screen and (max-width: 728px) {
+  .topbar__nav {
+    left: -100%;
+    position: fixed;
+    top: 0;
+    width: 190px;
+    background-color: #007297;
+    z-index: 1;
+    height: 100%;
+    margin-bottom: 0;
+    transition: left .5s linear; }
+
+  .topbar .topbar__link {
+    display: block; }
+
+  .topbar__nav-control--active .topbar__nav {
+    left: 0; }
+
+  .topbar .topbar__nav-toggle {
     display: block; } }
+.topbar__nav-toggle {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+.topbar__nav-toggle.topbar__nav-toggle-main {
+  margin: 0; }
+
+.topbar__nav-toggle span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+.topbar__nav-toggle span:nth-child(1) {
+  top: 0px; }
+
+.topbar__nav-toggle span:nth-child(2) {
+  top: 18px; }
+
+.topbar__nav-toggle span:nth-child(3) {
+  top: 36px; }
+
+.topbar__nav-control--active .topbar__nav-toggle span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.topbar__nav-control--active .topbar__nav-toggle span:nth-child(2) {
+  opacity: 0;
+  left: -60px; }
+
+.topbar__nav-control--active .topbar__nav-toggle span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
+
 .section--light {
   background-color: #fff;
   padding-bottom: 80px;
