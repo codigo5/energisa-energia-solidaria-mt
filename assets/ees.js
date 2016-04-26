@@ -415,7 +415,7 @@ var Map = (function () {
         mapTypeControl: true,
         mapTypeControlOptions: {
           style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-          mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.HYBRID]
+          mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.HYBRID, google.maps.MapTypeId.SATELLITE]
         },
         zoomControlOptions: {
           position: google.maps.ControlPosition.LEFT_BOTTOM
@@ -423,6 +423,7 @@ var Map = (function () {
         panControlOptions: {
           position: google.maps.ControlPosition.LEFT_BOTTOM
         }
+
       });
 
       this._gmapDeferred.resolve(gmap);
