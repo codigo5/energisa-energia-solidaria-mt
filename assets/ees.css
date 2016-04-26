@@ -1723,23 +1723,6 @@ blockquote p {
 .section--light__caption {
   padding-top: 10px; }
 
-.table-list__title {
-  background-color: #e4641b;
-  line-height: 65px;
-  color: #fff;
-  font-weight: bold; }
-
-.table-list__description {
-  background-color: #d6ecf3;
-  height: 65px;
-  line-height: 30px; }
-
-.table-list .table-list__row:nth-child(odd) .table-list__title {
-  background-color: #359ab3; }
-
-.table-list .table-list__row:nth-child(odd) .table-list__description {
-  background-color: #fadabf; }
-
 .list {
   background-color: #379ac3;
   color: #fff;
@@ -1785,3 +1768,37 @@ blockquote p {
   top: 0 !important;
   left: 0 !important;
   border-radius: 2px 2px 0 0; }
+
+.pretty-row__content {
+  padding: 15px;
+  background-color: #D6ECF3; }
+
+.pretty-row__label {
+  background-color: #e4641b;
+  font-weight: bold;
+  color: #fff; }
+  @media only screen and (min-width: 40.0625em) {
+    .pretty-row__label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 33.33333%; } }
+
+.pretty-table .row {
+  position: relative; }
+
+.pretty-row:nth-child(2n+1) .pretty-row__label {
+  background-color: #119CC5; }
+.pretty-row:nth-child(2n+1) .pretty-row__content {
+  background-color: #fadabf; }
+
+.pretty-row__label-description {
+  padding: 15px; }
+  @media only screen and (min-width: 40.0625em) {
+    .pretty-row__label-description {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%); } }
