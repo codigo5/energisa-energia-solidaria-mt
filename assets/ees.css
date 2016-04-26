@@ -1587,7 +1587,11 @@ blockquote p {
   padding: 20px 0;
   color: #fff;
   background: #0085b0;
-  border-bottom: 1px solid #007297; }
+  border-bottom: 1px solid #007297;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1; }
   .topbar .topbar__nav {
     text-align: center; }
   .topbar .topbar__nav-toggle {
@@ -1620,6 +1624,11 @@ blockquote p {
     height: 100%;
     margin-bottom: 0;
     transition: left .5s linear; }
+
+  .topbar {
+    background-color: transparent;
+    border-bottom: transparent;
+    widows: 12%; }
 
   .topbar .topbar__link {
     display: block; }
@@ -1714,7 +1723,8 @@ blockquote p {
 .outdoor img {
   background: #359ab3;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 79px; }
 
 .section--light__caption p {
   text-align: center;
@@ -1723,6 +1733,9 @@ blockquote p {
 .section--light__caption {
   padding-top: 10px; }
 
+@media screen and (max-width: 728px) {
+  .outdoor img {
+    margin-top: 0; } }
 .list {
   background-color: #379ac3;
   color: #fff;
