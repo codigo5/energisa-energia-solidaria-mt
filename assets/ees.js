@@ -412,6 +412,11 @@ var Map = (function () {
         zoom: 3,
         mapTypeControl: false,
         streetViewControl: false,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+          mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.HYBRID]
+        },
         zoomControlOptions: {
           position: google.maps.ControlPosition.LEFT_BOTTOM
         },
