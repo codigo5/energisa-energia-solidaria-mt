@@ -211,7 +211,7 @@ var StoreKind = (function (_Assignable) {
     }
 
     _get(Object.getPrototypeOf(StoreKind.prototype), 'constructor', this).apply(this, attributes);
-    this._icon = '/assets/icon-map-' + this.title + '.jpg';
+    this._icon = '/assets/pin-' + this.title + '.png';
     this.constructor.add(this);
   }
 
