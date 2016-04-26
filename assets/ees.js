@@ -403,7 +403,6 @@ var Map = (function () {
     value: function _onGmapsLoad() {
       var gmap = new google.maps.Map(this.mapEl[0], {
         draggable: !('ontouchend' in document),
-        scrollwheel: false,
         center: {
           // Cuiabá, Brazil
           lat: -15.6142309,
@@ -423,9 +422,7 @@ var Map = (function () {
         panControlOptions: {
           position: google.maps.ControlPosition.LEFT_BOTTOM
         }
-
       });
-
       this._gmapDeferred.resolve(gmap);
     }
   }]);
