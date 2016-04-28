@@ -270,7 +270,7 @@ var StoreKind = (function (_Assignable) {
   _createClass(StoreKind, [{
     key: 'fetchStores',
     value: function fetchStores() {
-      return $.getJSON('/data/' + this.title + '.json');
+      return $.getJSON('data/' + this.title + '.json');
     }
   }, {
     key: 'title',
