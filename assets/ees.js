@@ -374,11 +374,13 @@ var Map = (function () {
   _createClass(Map, [{
     key: 'userLocation',
     value: function userLocation() {
-      return new Promise(function (resolve, reject) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-          return resolve({ lat: position.coords.latitude, lng: position.coords.longitude });
-        }, reject);
-      });
+      var deferred = $.Deferred();
+
+      navigator.geolocation.getCurrentPosition(function (position) {
+        return deferred.resolve({ lat: position.coords.latitude, lng: position.coords.longitude });
+      }, deferred.reject);
+
+      return deferred.promise();
     }
   }, {
     key: 'centerMapToUserLocation',
@@ -446,7 +448,7 @@ var Map = (function () {
         })));
       }).then(function (rawStores) {
         return rawStores.map(function (rawStore) {
-          return new Store(Object.assign({}, rawStore, { kind: StoreKind.getOne(rawStore.title) }));
+          return new Store(deepmerge(rawStore, { kind: StoreKind.getOne(rawStore.title) }));
         });
       }).then(this.addStoresToMap.bind(this));
     }
