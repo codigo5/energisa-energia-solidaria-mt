@@ -1591,7 +1591,7 @@ blockquote p {
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 1; }
+  z-index: 11; }
   .topbar .topbar__nav {
     text-align: center; }
   .topbar .topbar__nav-toggle {
