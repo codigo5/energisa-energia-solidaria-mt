@@ -468,13 +468,14 @@ var Map = (function () {
         mapTypeControl: true,
         mapTypeControlOptions: {
           style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+          position: google.maps.ControlPosition.LEFT_CENTER,
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.HYBRID, google.maps.MapTypeId.SATELLITE]
         },
         zoomControlOptions: {
-          position: google.maps.ControlPosition.LEFT_BOTTOM
+          position: google.maps.ControlPosition.RIGHT_BOTTOM
         },
         panControlOptions: {
-          position: google.maps.ControlPosition.LEFT_BOTTOM
+          position: google.maps.ControlPosition.RIGHT_BOTTOM
         }
       });
       this._gmapDeferred.resolve(gmap);
