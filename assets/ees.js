@@ -520,4 +520,24 @@ $(document).ready(function () {
     return false;
   });
 });
+// $.ajax({
+//   dataType: "json",
+//   url: 'data/cidade.json',
+//   success: function(data) {
+//     console.log(data);
+//   },
+//   error: function(xhr) {
+//     console.log(xhr);
+//   }
+// });
+
+'use strict';
+
+$.getJSON("data/cidade.json", function (json) {
+  $('#select-list').empty();
+  $('#select-list').append($('<option>').text("Selectione sua cidade"));
+  $.each(json, function (i, obj) {
+    $('#select-list').append($('<option>').text(obj.cidade).attr('value', obj.cidade));
+  });
+});
 "use strict";
