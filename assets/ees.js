@@ -553,6 +553,7 @@ $(document).ready(function () {
 
           window.ees.map.gmapPromise.then(function (gmap) {
             gmap.setCenter(latlng);
+            gmap.setZoom(15);
           });
         }
       });
