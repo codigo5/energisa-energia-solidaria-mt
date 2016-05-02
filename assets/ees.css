@@ -2293,5 +2293,6 @@ blockquote p {
   padding: 1em;
   display: none; }
 
+.chosen-container-single .chosen-single span,
 .chosen-container .chosen-results li {
   text-transform: capitalize; }

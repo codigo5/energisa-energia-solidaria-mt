@@ -536,11 +536,7 @@ $(document).ready(function () {
     });
 
     $.each(cidades, function (i, obj) {
-      var cidade = obj.cidade.split('').map(function (letter, index) {
-        return index === 0 ? letter.toUpperCase() : letter.toLowerCase();
-      }).join('');
-
-      var optionHTML = $('<option>').text(cidade).attr('value', obj.cidade);
+      var optionHTML = $('<option>').text(obj.cidade).attr('value', obj.cidade);
       selectList.append(optionHTML);
     });
 
