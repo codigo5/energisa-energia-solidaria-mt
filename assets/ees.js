@@ -527,7 +527,7 @@ $(document).ready(function () {
     var selectList = $('.select-list');
 
     selectList.empty();
-    selectList.append($('<option>').text("Selectione sua cidade"));
+    selectList.append($('<option>'));
 
     cidades.sort(function (a, b) {
       if (a.cidade < b.cidade) return -1;
@@ -536,11 +536,17 @@ $(document).ready(function () {
     });
 
     $.each(cidades, function (i, obj) {
-      var optionHTML = $('<option>').text(obj.cidade).attr('value', obj.cidade);
+      var cidade = obj.cidade.split('').map(function (letter, index) {
+        return index === 0 ? letter.toUpperCase() : letter.toLowerCase();
+      }).join('');
+
+      var optionHTML = $('<option>').text(cidade).attr('value', obj.cidade);
       selectList.append(optionHTML);
     });
 
-    selectList.chosen();
+    selectList.chosen({
+      no_results_text: "Nenhum resultado encontrado"
+    });
 
     selectList.on('change', function () {
       var cidade = selectList.val();

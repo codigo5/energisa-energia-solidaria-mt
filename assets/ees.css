@@ -2293,8 +2293,5 @@ blockquote p {
   padding: 1em;
   display: none; }
 
-.select-list option {
-  text-transform: capitalize; }
-
 .chosen-container .chosen-results li {
   text-transform: capitalize; }
