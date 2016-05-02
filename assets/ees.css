@@ -1843,12 +1843,3 @@ blockquote p {
   font-size: 12px;
   padding: 1em;
   display: none; }
-
-.select-list__map {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 1;
-  padding: 112px; }

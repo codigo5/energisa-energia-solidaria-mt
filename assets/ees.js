@@ -525,6 +525,11 @@ $(document).ready(function () {
 $.getJSON("data/cidade.json", function (json) {
   $('#select-list').empty();
   $('#select-list').append($('<option>').text("Selectione sua cidade"));
+  json.sort(function (a, b) {
+    if (a.cidade < b.cidade) return -1;
+    if (b.cidade < a.cidade) return 1;
+    return 0;
+  });
 
   $.each(json, function (i, obj) {
     var optionHTML = $('<option>').text(obj.cidade).attr('value', obj.cidade);
