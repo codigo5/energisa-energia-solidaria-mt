@@ -320,7 +320,7 @@ var Store = (function (_Assignable2) {
   }, {
     key: 'toHTML',
     value: function toHTML() {
-      var node = '\n      <h1>' + this.title + '</h1>\n      <p>Endereço: ' + this.formattedAddress + '</p>\n    ';
+      var node = '\n      <h4>' + this.title + '</h4>\n      <p>Endereço: ' + this.formattedAddress + '</p>\n    ';
 
       if (this.postal_code) {
         node += '<p>CEP: ' + this.postal_code + '</p>';
