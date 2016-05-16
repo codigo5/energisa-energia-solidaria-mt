@@ -2212,7 +2212,8 @@ blockquote p {
   font-size: 12px; }
 
 .section--light__caption {
-  padding-top: 10px; }
+  padding-top: 10px;
+  background: #C6D3D8; }
 
 @media screen and (max-width: 728px) {
   .outdoor img {
@@ -2399,7 +2400,8 @@ blockquote p {
   text-decoration: none;
   font-size: 12px;
   padding: 1em;
-  display: none; }
+  display: none;
+  z-index: 1999; }
 
 @font-face {
   font-family: 'the_sans_plain-regular';
