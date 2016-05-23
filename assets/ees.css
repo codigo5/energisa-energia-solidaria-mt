@@ -2234,22 +2234,29 @@ blockquote p {
 .list__title h2 {
   font-weight: bold;
   color: #fff;
-  padding: 11px 0px 32px; }
+  padding: 11px 0px 32px;
+  font-size: 19px; }
 
 .list__unsort h5 {
   color: #f4f521;
   font-weight: bold;
-  padding-top: 10px; }
+  padding-top: 10px;
+  font-size: 19px; }
 
 .list__unsort h6 {
   font-weight: bold;
-  color: #fff; }
+  color: #fff;
+  font-size: 19px; }
 
 .list__unsort {
   line-height: 0; }
 
 .list__unsort p {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  font-size: 18px; }
+
+.list p {
+  font-size: 20px; }
 
 @font-face {
   font-family: 'the_sans_plain-regular';
@@ -2363,7 +2370,8 @@ blockquote p {
   background-color: #fadabf; }
 
 .pretty-row__label-description {
-  padding: 14px; }
+  padding: 14px;
+  font-size: 17px; }
   @media only screen and (min-width: 40.0625em) {
     .pretty-row__label-description {
       position: absolute;
@@ -2392,6 +2400,12 @@ blockquote p {
 
 .pretty-row__content {
   color: #3F3E46; }
+
+.download h5 {
+  padding-top: 15px; }
+
+.download p {
+  margin-bottom: 5px !important; }
 
 .back-to-top {
   position: fixed;
