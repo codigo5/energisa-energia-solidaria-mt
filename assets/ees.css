@@ -2235,7 +2235,8 @@ blockquote p {
   font-weight: bold;
   color: #fff;
   padding: 11px 0px 32px;
-  font-size: 19px; }
+  font-size: 32px;
+  text-transform: uppercase; }
 
 .list__unsort h5 {
   color: #f4f521;
