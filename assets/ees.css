@@ -2371,7 +2371,7 @@ blockquote p {
 
 .pretty-row__label-description {
   padding: 14px;
-  font-size: 14px; }
+  font-size: 17px; }
   @media only screen and (min-width: 40.0625em) {
     .pretty-row__label-description {
       position: absolute;
@@ -2379,14 +2379,14 @@ blockquote p {
       left: 0;
       text-align: center;
       right: 0;
-      font-size: 14px;
-      transform: translateY(-50%); } }
+      font-size: 17px;
+      transform: translateY(-50%);
+      line-height: 18px; } }
 
 .pretty-row__label-title {
   font-weight: bold;
   display: block;
   text-ali: center;
-  font-size: 14px;
   text-align: center;
   text-transform: uppercase; }
 
