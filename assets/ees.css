@@ -2234,7 +2234,7 @@ blockquote p {
 .list__title h2 {
   font-weight: bold;
   color: #fff;
-  padding: 11px 0px 32px;
+  padding: 11px 0px 15px;
   font-size: 32px;
   text-transform: uppercase; }
 
@@ -2255,6 +2255,9 @@ blockquote p {
 .list__unsort p {
   padding-bottom: 10px;
   font-size: 18px; }
+
+.list__unsort a {
+  color: #fff; }
 
 .list p {
   font-size: 20px; }
