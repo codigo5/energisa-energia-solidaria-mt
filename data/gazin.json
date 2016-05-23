@@ -17,7 +17,7 @@
 {"id":23,"title":"Gazin","city":"CAMPO VERDE","address":"R. JOAO PESSOA, 728","neighborhood":"CENTRO","state":"MT","postal_code":"78840000","phone":"66 - 34191090","latitude":"-15.5482838","longitude":"-55.1708617"},
 {"id":29,"title":"Gazin","city":"RONDONÓPOLIS","address":"AV. MARECHAL RONDON, 1150","neighborhood":"CENTRO","state":"MT","postal_code":"78700075","phone":"66 - 34109000","latitude":"-16.4703675","longitude":"-54.6299642"},
 {"id":30,"title":"Gazin","city":"LUCAS DO RIO VERDE","address":"AVENIDA MATO GROSSO, 525","neighborhood":"CENTRO","state":"MT","postal_code":"78455000","phone":"65 - 35492733","latitude":"-13.0675605","longitude":"-55.9203243"},
-{"id":32,"title":"Gazin","city":"ALTA FLORESTA","address":"AV. LUDOVICO DA RIVA NETO, 2780","neighborhood":"CENTRO","state":"MT","postal_code":"78580000","phone":"66 - 35123800","latitude":"-98.741797","longitude":"-56.0864157"},
+{"id":32,"title":"Gazin","city":"ALTA FLORESTA","address":"AV. LUDOVICO DA RIVA NETO, 2780","neighborhood":"CENTRO","state":"MT","postal_code":"78580000","phone":"66 - 35123800","latitude":"-9.874185","longitude":"-56.084227"},
 {"id":39,"title":"Gazin","city":"COLÍDER","address":"AV. MARECHAL RONDON, 915","neighborhood":"CENTRO","state":"MT","postal_code":"78500000","phone":"66 - 35412040","latitude":"-10.8136613","longitude":"-55.4557705"},
 {"id":41,"title":"Gazin","city":"SINOP","address":"AV. DAS ITAUBAS, 3827","neighborhood":"SETOR COMERCIAL","state":"MT","postal_code":"78550000","phone":"66 - 35201200","latitude":"-11.8511617","longitude":"-55.5117737"},
 {"id":43,"title":"Gazin","city":"BARRA DO GARÇAS","address":"R. AMARO LEITE, 742","neighborhood":"CENTRO","state":"MT","postal_code":"78600000","phone":"66 - 34024250","latitude":"-15.8914697","longitude":"-52.2653782"},
@@ -75,4 +75,5 @@
 {"id":286,"title":"Gazin","city":"CÁCERES","address":"Av. Talhamares, 301","neighborhood":"Centro","state":"MT","postal_code":"78200000","phone":"65 - 32242945","latitude":"-16.0795658","longitude":"-57.6838967"},
 {"id":287,"title":"Gazin","city":"LUCAS DO RIO VERDE","address":"AVENIDA MATO GROSSO, 1256","neighborhood":"ALVORADA","state":"MT","postal_code":"78455000","phone":"","latitude":"-13.0728472","longitude":"-55.9155667"},
 {"id":288,"title":"Gazin","city":"JUÍNA","address":"Av. Londrina,, 134","neighborhood":"Setor D","state":"MT","postal_code":"78320000","phone":"66 - 35663212","latitude":"-11.4162247","longitude":"-58.7660707"},
-{"id":293,"title":"Gazin","city":"CAMPOS DE JÚLIO","address":"AVENIDA VALDIR MASUTTI, 421-E","neighborhood":"CENTRO","state":"MT","postal_code":"78307000","phone":"","latitude":"-13.7206346","longitude":"-59.2611506"}]
+{"id":293,"title":"Gazin","city":"CAMPOS DE JÚLIO","address":"AVENIDA VALDIR MASUTTI, 421-E","neighborhood":"CENTRO","state":"MT","postal_code":"78307000","phone":"","latitude":"-13.7206346","longitude":"-59.2611506"},
+{"id":294,"title":"Gazin","city":"ALTO TAQUARI","address":"AVENIDA ANGÉLICA, 75","neighborhood":"CENTRO","state":"MT","postal_code":"78785000","phone":"","latitude":"-17.833734","longitude":"-53.2832137"}]
